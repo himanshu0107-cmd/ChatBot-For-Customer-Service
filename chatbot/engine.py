@@ -92,7 +92,7 @@ class ChatbotEngine:
             conf = 0.75
 
         # Low confidence → fallback
-        if conf < 0.08:
+        if conf < 0.12:
             return 'fallback', conf
 
         return tag, conf
