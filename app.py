@@ -4,7 +4,7 @@ import uuid
 import os
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
+app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
 
 # One engine instance per session stored in a dict
 engines = {}
@@ -43,5 +43,11 @@ def history():
     engine = get_engine()
     return jsonify({'history': engine.conversation_history})
 
+@app.route('/metrics', methods=['GET'])
+def metrics():
+    engine = get_engine()
+    return jsonify(engine.get_metrics())
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    debug = os.environ.get('FLASK_DEBUG', 'false').lower() == 'true'
+    app.run(debug=debug)

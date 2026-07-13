@@ -1,0 +1,27 @@
+{
+  "model": "SVM",
+  "accuracy": 75.82,
+  "cv_mean": 71.48,
+  "cv_std": 9.84,
+  "num_samples": 453,
+  "num_classes": 15,
+  "classes": [
+    "account_help",
+    "cancel_order",
+    "complaint",
+    "contact_support",
+    "discount_promo",
+    "goodbye",
+    "greeting",
+    "hours",
+    "order_status",
+    "payment_issues",
+    "product_info",
+    "return_policy",
+    "shipping_info",
+    "thanks",
+    "warranty"
+  ],
+  "svm_accuracy": 75.82,
+  "nb_accuracy": 72.53
+}

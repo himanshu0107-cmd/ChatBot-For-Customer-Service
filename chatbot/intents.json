@@ -2,7 +2,13 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "howdy", "what's up", "greetings"],
+      "patterns": [
+        "hi", "hello", "hey", "good morning", "good evening", "good afternoon",
+        "howdy", "what's up", "greetings", "hi there", "hello there", "hey there",
+        "sup", "yo", "hiya", "good day", "morning", "evening", "afternoon",
+        "nice to meet you", "pleased to meet you", "how are you", "how do you do",
+        "is anyone there", "anyone home", "start", "begin", "help me"
+      ],
       "responses": [
         "Hello! Welcome to our support center. How can I assist you today?",
         "Hi there! I'm here to help. What can I do for you?",
@@ -11,7 +17,13 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["bye", "goodbye", "see you", "take care", "later", "quit", "exit", "farewell"],
+      "patterns": [
+        "bye", "goodbye", "see you", "take care", "later", "quit", "exit", "farewell",
+        "see you later", "talk to you later", "have a good day", "have a nice day",
+        "good night", "night", "cya", "catch you later", "i'm done", "that's all",
+        "nothing else", "no more questions", "i'm good now", "thanks bye",
+        "ok bye", "alright bye", "done for now", "signing off", "logging off"
+      ],
       "responses": [
         "Goodbye! Have a wonderful day. Feel free to return anytime!",
         "Take care! We're always here if you need help.",
@@ -20,7 +32,14 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["thanks", "thank you", "appreciate it", "that helped", "great thanks", "cheers", "ty"],
+      "patterns": [
+        "thanks", "thank you", "appreciate it", "that helped", "great thanks", "cheers", "ty",
+        "thank you so much", "many thanks", "thanks a lot", "thanks a bunch",
+        "much appreciated", "that was helpful", "you helped me", "perfect thanks",
+        "awesome thanks", "great help", "you're amazing", "wonderful thank you",
+        "that's exactly what I needed", "problem solved thanks", "got it thanks",
+        "understood thanks", "ok thanks", "alright thanks", "cool thanks"
+      ],
       "responses": [
         "You're welcome! Is there anything else I can help you with?",
         "Happy to help! Let me know if you need anything else.",
@@ -29,7 +48,16 @@
     },
     {
       "tag": "order_status",
-      "patterns": ["where is my order", "track my order", "order status", "order tracking", "when will my order arrive", "check my order", "order update", "delivery status", "shipment status"],
+      "patterns": [
+        "where is my order", "track my order", "order status", "order tracking",
+        "when will my order arrive", "check my order", "order update", "delivery status",
+        "shipment status", "where is my package", "track my package", "package status",
+        "has my order shipped", "did my order ship", "order not arrived",
+        "order is late", "order delayed", "expected delivery date", "delivery date",
+        "when will I receive my order", "order confirmation", "check order status",
+        "find my order", "locate my order", "order number status", "my order status",
+        "track shipment", "shipping status", "where is my shipment", "order progress"
+      ],
       "responses": [
         "To track your order, please visit our website and enter your order ID in the 'Track Order' section. You can also check your email for a tracking link we sent after your purchase.",
         "You can track your order by logging into your account and navigating to 'My Orders'. Your tracking number should also be in your confirmation email.",
@@ -38,7 +66,16 @@
     },
     {
       "tag": "return_policy",
-      "patterns": ["return policy", "how to return", "can I return", "refund policy", "return item", "exchange policy", "return product", "money back", "return request"],
+      "patterns": [
+        "return policy", "how to return", "can I return", "refund policy", "return item",
+        "exchange policy", "return product", "money back", "return request",
+        "how do I return", "want to return", "need to return", "return an item",
+        "return my order", "return my purchase", "get a refund", "request refund",
+        "refund request", "how to get refund", "can I get my money back",
+        "return window", "return period", "days to return", "return deadline",
+        "exchange item", "swap item", "replace item", "return process",
+        "initiate return", "start a return", "return instructions"
+      ],
       "responses": [
         "Our return policy allows returns within 30 days of purchase. Items must be unused and in original packaging. Visit our Returns Center or contact us to initiate a return.",
         "We offer hassle-free returns within 30 days! Simply go to 'My Orders', select the item, and click 'Return'. Refunds are processed within 5-7 business days.",
@@ -47,7 +84,17 @@
     },
     {
       "tag": "payment_issues",
-      "patterns": ["payment failed", "payment not working", "can't pay", "payment issue", "transaction failed", "card declined", "payment error", "billing problem", "charge issue"],
+      "patterns": [
+        "payment failed", "payment not working", "cant pay", "payment issue",
+        "transaction failed", "card declined", "payment error", "billing problem",
+        "charge issue", "my payment didnt go through", "payment unsuccessful",
+        "unable to pay", "payment rejected", "card not accepted", "card not working",
+        "debit card declined", "credit card declined", "payment processing error",
+        "checkout not working", "cant complete purchase", "purchase failed",
+        "billing error", "wrong charge", "overcharged", "double charged",
+        "charged twice", "incorrect amount charged", "unexpected charge",
+        "payment pending", "payment stuck", "payment not processing"
+      ],
       "responses": [
         "I'm sorry to hear about the payment issue! Please check that your card details are correct and that you have sufficient funds. If the problem persists, try a different payment method or contact your bank.",
         "Payment failures can happen due to incorrect card details, insufficient funds, or bank restrictions. Please verify your information and try again. Need further help? Our billing team is available 24/7.",
@@ -56,7 +103,17 @@
     },
     {
       "tag": "account_help",
-      "patterns": ["forgot password", "reset password", "can't login", "account locked", "login issue", "account problem", "change password", "account access", "sign in problem"],
+      "patterns": [
+        "forgot password", "reset password", "cant login", "account locked",
+        "login issue", "account problem", "change password", "account access",
+        "sign in problem", "cant sign in", "unable to login", "login not working",
+        "password reset", "forgot my password", "lost password", "password expired",
+        "account suspended", "account disabled", "account blocked", "unlock account",
+        "create account", "register account", "new account", "sign up",
+        "update email", "change email", "update account", "account settings",
+        "delete account", "close account", "two factor authentication", "2fa issue",
+        "verification code", "cant receive verification", "account hacked"
+      ],
       "responses": [
         "To reset your password, click 'Forgot Password' on the login page and enter your email. You'll receive a reset link within a few minutes. Check your spam folder if you don't see it!",
         "For account access issues, go to the login page and select 'Forgot Password'. If your account is locked, it will automatically unlock after 30 minutes, or contact our support team.",
@@ -65,7 +122,17 @@
     },
     {
       "tag": "shipping_info",
-      "patterns": ["shipping cost", "delivery time", "how long does shipping take", "free shipping", "shipping options", "express delivery", "international shipping", "shipping rates"],
+      "patterns": [
+        "shipping cost", "delivery time", "how long does shipping take", "free shipping",
+        "shipping options", "express delivery", "international shipping", "shipping rates",
+        "how much is shipping", "shipping fee", "delivery fee", "delivery cost",
+        "how fast is delivery", "fastest shipping", "overnight shipping", "same day delivery",
+        "next day delivery", "standard shipping", "economy shipping", "shipping methods",
+        "do you ship internationally", "ship to my country", "ship overseas",
+        "shipping to canada", "shipping to uk", "shipping to australia",
+        "estimated delivery", "delivery estimate", "when will it arrive",
+        "shipping time", "how long to deliver", "delivery options"
+      ],
       "responses": [
         "We offer free standard shipping on orders over $50! Standard delivery takes 5-7 business days. Express shipping (2-3 days) is available for $9.99, and overnight shipping for $19.99.",
         "Shipping options: Standard (5-7 days, free over $50), Express (2-3 days, $9.99), Overnight ($19.99). International shipping is available to 50+ countries with rates starting at $14.99.",
@@ -74,7 +141,17 @@
     },
     {
       "tag": "product_info",
-      "patterns": ["product details", "tell me about", "product information", "specifications", "features", "what products do you have", "product catalog", "available products"],
+      "patterns": [
+        "product details", "tell me about", "product information", "specifications",
+        "features", "what products do you have", "product catalog", "available products",
+        "product description", "what does it include", "what comes in the box",
+        "product specs", "technical specifications", "dimensions", "weight",
+        "color options", "size options", "available sizes", "available colors",
+        "is it compatible", "does it work with", "product compatibility",
+        "best product for", "recommend a product", "which product should I buy",
+        "product comparison", "compare products", "product reviews", "is it good quality",
+        "product rating", "customer reviews", "what are people saying"
+      ],
       "responses": [
         "We have a wide range of products! You can browse our full catalog on our website. Use the search bar to find specific items, or filter by category. Need help finding something specific?",
         "Our product catalog is available on our website with detailed descriptions, specifications, and customer reviews. Is there a specific product or category you're interested in?",
@@ -83,7 +160,16 @@
     },
     {
       "tag": "cancel_order",
-      "patterns": ["cancel order", "cancel my order", "stop order", "don't want order", "order cancellation", "cancel purchase"],
+      "patterns": [
+        "cancel order", "cancel my order", "stop order", "dont want order",
+        "order cancellation", "cancel purchase", "how to cancel", "can I cancel",
+        "want to cancel", "need to cancel my order", "cancel before shipping",
+        "cancel unshipped order", "cancel recent order", "undo my order",
+        "I changed my mind", "dont want it anymore", "ordered by mistake",
+        "wrong item ordered", "accidental order", "cancel immediately",
+        "stop my order", "pull back my order", "revoke order", "withdraw order",
+        "cancel transaction", "void order", "cancel before it ships"
+      ],
       "responses": [
         "To cancel an order, go to 'My Orders' in your account and select 'Cancel Order' if it hasn't shipped yet. Orders that have already shipped need to go through our return process.",
         "Order cancellations are possible within 1 hour of placing the order. After that, if the order has shipped, you'll need to return it. Would you like help with the cancellation process?",
@@ -92,34 +178,73 @@
     },
     {
       "tag": "contact_support",
-      "patterns": ["contact support", "talk to agent", "human agent", "speak to someone", "customer service number", "live chat", "email support", "contact us", "reach support"],
+      "patterns": [
+        "contact support", "talk to agent", "human agent", "speak to someone",
+        "customer service number", "live chat", "email support", "contact us",
+        "reach support", "talk to a person", "speak with representative",
+        "connect to human", "real person please", "need human help",
+        "escalate my issue", "speak to manager", "talk to supervisor",
+        "phone number", "call support", "support email", "support phone",
+        "how to contact", "get in touch", "reach customer service",
+        "customer care", "helpdesk", "help desk", "support team",
+        "contact information", "support contact", "where to call"
+      ],
       "responses": [
-        "You can reach our support team via: 📞 Phone: 1-800-SUPPORT (Mon-Fri 9AM-6PM EST), 📧 Email: support@company.com, 💬 Live Chat on our website (24/7). How would you prefer to connect?",
+        "You can reach our support team via: Phone: 1-800-SUPPORT (Mon-Fri 9AM-6PM EST), Email: support@company.com, Live Chat on our website (24/7). How would you prefer to connect?",
         "Our customer service team is available through multiple channels! Call us at 1-800-SUPPORT, email support@company.com, or use the live chat on our website for instant assistance.",
         "I'll connect you with our support team! You can reach us at 1-800-SUPPORT, chat live on our website, or email us at support@company.com. Average response time is under 2 hours."
       ]
     },
     {
       "tag": "discount_promo",
-      "patterns": ["discount", "promo code", "coupon", "sale", "offer", "deal", "voucher", "promotional code", "any deals"],
+      "patterns": [
+        "discount", "promo code", "coupon", "sale", "offer", "deal", "voucher",
+        "promotional code", "any deals", "discount code", "coupon code",
+        "is there a sale", "any offers", "special offer", "current promotions",
+        "best deals", "flash sale", "clearance sale", "seasonal sale",
+        "first order discount", "new customer discount", "loyalty discount",
+        "referral discount", "student discount", "military discount",
+        "apply coupon", "use promo code", "enter discount code",
+        "save money", "get discount", "cheaper price", "price reduction"
+      ],
       "responses": [
-        "Great news! Sign up for our newsletter to get 10% off your first order. We also run seasonal sales — check our website's 'Deals' section for current promotions!",
+        "Great news! Sign up for our newsletter to get 10% off your first order. We also run seasonal sales - check our website's 'Deals' section for current promotions!",
         "We have exciting offers! New customers get 10% off with code WELCOME10. Subscribe to our newsletter for exclusive deals and early access to sales.",
         "Check out our Deals page for current promotions! You can also follow us on social media for flash sales and exclusive discount codes. First-time shoppers get 10% off!"
       ]
     },
     {
       "tag": "complaint",
-      "patterns": ["complaint", "not satisfied", "bad experience", "poor service", "unhappy", "disappointed", "terrible", "worst", "problem with service", "issue with product"],
+      "patterns": [
+        "complaint", "not satisfied", "bad experience", "poor service", "unhappy",
+        "disappointed", "terrible", "worst", "problem with service", "issue with product",
+        "very unhappy", "extremely disappointed", "awful service", "horrible experience",
+        "unacceptable", "this is ridiculous", "this is outrageous", "I am angry",
+        "I am frustrated", "very frustrated", "fed up", "had enough",
+        "worst experience ever", "never shopping here again", "want to complain",
+        "file a complaint", "raise a complaint", "report an issue",
+        "bad product", "defective product received", "wrong item received",
+        "damaged item received", "item not as described", "misleading product"
+      ],
       "responses": [
         "I sincerely apologize for your experience. Your feedback is very important to us. Could you please describe the issue in detail so I can escalate it to the right team immediately?",
         "I'm truly sorry to hear this. We take all complaints seriously and want to make this right for you. Please share more details and I'll ensure this gets priority attention.",
-        "I apologize for the inconvenience caused. We strive to provide the best service and clearly fell short here. Let me help resolve this — could you share more about what happened?"
+        "I apologize for the inconvenience caused. We strive to provide the best service and clearly fell short here. Let me help resolve this - could you share more about what happened?"
       ]
     },
     {
       "tag": "warranty",
-      "patterns": ["warranty", "guarantee", "product warranty", "warranty claim", "warranty period", "defective product", "broken product", "damaged item"],
+      "patterns": [
+        "warranty", "guarantee", "product warranty", "warranty claim", "warranty period",
+        "defective product", "broken product", "damaged item", "how long is warranty",
+        "warranty coverage", "what does warranty cover", "warranty terms",
+        "file warranty claim", "submit warranty claim", "warranty repair",
+        "warranty replacement", "product stopped working", "product broke",
+        "product not working", "malfunctioning product", "faulty product",
+        "manufacturing defect", "product defect", "quality issue",
+        "warranty expired", "is it under warranty", "check warranty status",
+        "extended warranty", "warranty registration", "register warranty"
+      ],
       "responses": [
         "All our products come with a 1-year manufacturer's warranty covering defects in materials and workmanship. For warranty claims, please contact us with your order number and photos of the issue.",
         "Our warranty covers manufacturing defects for 1 year from purchase. To file a claim, email warranty@company.com with your order ID and a description of the issue. We'll respond within 24 hours.",
@@ -128,7 +253,16 @@
     },
     {
       "tag": "hours",
-      "patterns": ["business hours", "working hours", "when are you open", "support hours", "office hours", "what time do you open", "are you open"],
+      "patterns": [
+        "business hours", "working hours", "when are you open", "support hours",
+        "office hours", "what time do you open", "are you open", "opening hours",
+        "closing hours", "what time do you close", "when do you close",
+        "are you available now", "is support available", "24 hour support",
+        "weekend support", "saturday hours", "sunday hours", "holiday hours",
+        "after hours support", "outside business hours", "when can I call",
+        "what are your hours", "hours of operation", "service hours",
+        "availability", "when is support available", "chat hours"
+      ],
       "responses": [
         "Our customer support is available Monday-Friday 9AM-6PM EST, and Saturday 10AM-4PM EST. Our chatbot and online resources are available 24/7!",
         "We're here for you! Live support hours: Mon-Fri 9AM-6PM EST, Sat 10AM-4PM EST. For urgent issues outside these hours, email us and we'll respond first thing in the morning.",
