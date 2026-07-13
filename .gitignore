@@ -2,10 +2,6 @@
 *.txt
 *.log
 
-# Screenshots
-*.png
-*.jpg
-*.jpeg
 
 # Python
 __pycache__/
