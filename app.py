@@ -4,7 +4,7 @@ import uuid
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
+app.secret_key = os.environ.get('SECRET_KEY', 'supportai-secret-key-2024')
 
 # One engine instance per session stored in a dict
 engines = {}
@@ -28,8 +28,12 @@ def chat():
     if not user_message:
         return jsonify({'error': 'Empty message'}), 400
     engine = get_engine()
-    result = engine.get_response(user_message)
-    return jsonify(result)
+    try:
+        result = engine.get_response(user_message)
+        return jsonify(result)
+    except Exception as e:
+        print(f'[ERROR] /chat failed: {e}')
+        return jsonify({'response': 'Something went wrong on my end. Please try again.', 'intent': 'error', 'confidence': 0, 'sentiment': 'neutral', 'sentiment_score': 0.0, 'entities': {}, 'suggestions': [], 'model': 'SVM'}), 200
 
 @app.route('/reset', methods=['POST'])
 def reset():

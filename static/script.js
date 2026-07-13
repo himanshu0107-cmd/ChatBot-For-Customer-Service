@@ -95,29 +95,26 @@ async function sendMessage(text) {
   // Simulate realistic typing delay
   const delay = Math.min(800 + message.length * 10, 2000);
 
-  try {
-    const res = await fetch('/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message })
-    });
-    const data = await res.json();
-
+  fetch('/chat', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message })
+  })
+  .then(res => res.json())
+  .then(data => {
     setTimeout(() => {
       hideTyping();
-      appendMessage('bot', data.response, {
-        intent: data.intent,
-        sentiment: data.sentiment
-      });
+      appendMessage('bot', data.response, { intent: data.intent, sentiment: data.sentiment });
       updateConfidence(data.confidence);
       updateSuggestions(data.suggestions || []);
     }, delay);
-  } catch (err) {
+  })
+  .catch(() => {
     setTimeout(() => {
       hideTyping();
-      appendMessage('bot', 'Sorry, I encountered an error. Please try again.', {});
+      appendMessage('bot', 'Could not reach the server. Make sure the app is running on http://localhost:5000', {});
     }, 500);
-  }
+  });
 }
 
 // Event listeners
