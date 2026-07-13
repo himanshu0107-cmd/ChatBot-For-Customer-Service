@@ -1,0 +1,148 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "howdy", "what's up", "greetings"],
+      "responses": [
+        "Hello! Welcome to our support center. How can I assist you today?",
+        "Hi there! I'm here to help. What can I do for you?",
+        "Hey! Great to see you. What brings you here today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "take care", "later", "quit", "exit", "farewell"],
+      "responses": [
+        "Goodbye! Have a wonderful day. Feel free to return anytime!",
+        "Take care! We're always here if you need help.",
+        "Bye! Thanks for reaching out. Have a great day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it", "that helped", "great thanks", "cheers", "ty"],
+      "responses": [
+        "You're welcome! Is there anything else I can help you with?",
+        "Happy to help! Let me know if you need anything else.",
+        "Anytime! Don't hesitate to ask if you have more questions."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["where is my order", "track my order", "order status", "order tracking", "when will my order arrive", "check my order", "order update", "delivery status", "shipment status"],
+      "responses": [
+        "To track your order, please visit our website and enter your order ID in the 'Track Order' section. You can also check your email for a tracking link we sent after your purchase.",
+        "You can track your order by logging into your account and navigating to 'My Orders'. Your tracking number should also be in your confirmation email.",
+        "For real-time order tracking, please provide your order ID and I'll help you check the status right away!"
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": ["return policy", "how to return", "can I return", "refund policy", "return item", "exchange policy", "return product", "money back", "return request"],
+      "responses": [
+        "Our return policy allows returns within 30 days of purchase. Items must be unused and in original packaging. Visit our Returns Center or contact us to initiate a return.",
+        "We offer hassle-free returns within 30 days! Simply go to 'My Orders', select the item, and click 'Return'. Refunds are processed within 5-7 business days.",
+        "You can return any item within 30 days for a full refund. Items should be in their original condition. Would you like me to guide you through the return process?"
+      ]
+    },
+    {
+      "tag": "payment_issues",
+      "patterns": ["payment failed", "payment not working", "can't pay", "payment issue", "transaction failed", "card declined", "payment error", "billing problem", "charge issue"],
+      "responses": [
+        "I'm sorry to hear about the payment issue! Please check that your card details are correct and that you have sufficient funds. If the problem persists, try a different payment method or contact your bank.",
+        "Payment failures can happen due to incorrect card details, insufficient funds, or bank restrictions. Please verify your information and try again. Need further help? Our billing team is available 24/7.",
+        "For payment issues, please ensure your billing address matches your card records. You can also try clearing your browser cache or using a different browser. Shall I connect you to our billing support?"
+      ]
+    },
+    {
+      "tag": "account_help",
+      "patterns": ["forgot password", "reset password", "can't login", "account locked", "login issue", "account problem", "change password", "account access", "sign in problem"],
+      "responses": [
+        "To reset your password, click 'Forgot Password' on the login page and enter your email. You'll receive a reset link within a few minutes. Check your spam folder if you don't see it!",
+        "For account access issues, go to the login page and select 'Forgot Password'. If your account is locked, it will automatically unlock after 30 minutes, or contact our support team.",
+        "I can help with account issues! Click 'Forgot Password' on the login screen, enter your registered email, and follow the instructions sent to you."
+      ]
+    },
+    {
+      "tag": "shipping_info",
+      "patterns": ["shipping cost", "delivery time", "how long does shipping take", "free shipping", "shipping options", "express delivery", "international shipping", "shipping rates"],
+      "responses": [
+        "We offer free standard shipping on orders over $50! Standard delivery takes 5-7 business days. Express shipping (2-3 days) is available for $9.99, and overnight shipping for $19.99.",
+        "Shipping options: Standard (5-7 days, free over $50), Express (2-3 days, $9.99), Overnight ($19.99). International shipping is available to 50+ countries with rates starting at $14.99.",
+        "Great news! Orders over $50 qualify for free shipping. For faster delivery, we offer express (2-3 days) and overnight options. International orders typically arrive in 10-14 business days."
+      ]
+    },
+    {
+      "tag": "product_info",
+      "patterns": ["product details", "tell me about", "product information", "specifications", "features", "what products do you have", "product catalog", "available products"],
+      "responses": [
+        "We have a wide range of products! You can browse our full catalog on our website. Use the search bar to find specific items, or filter by category. Need help finding something specific?",
+        "Our product catalog is available on our website with detailed descriptions, specifications, and customer reviews. Is there a specific product or category you're interested in?",
+        "I'd be happy to help you find the right product! Could you tell me more about what you're looking for? I can point you to the right category or provide specific product details."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": ["cancel order", "cancel my order", "stop order", "don't want order", "order cancellation", "cancel purchase"],
+      "responses": [
+        "To cancel an order, go to 'My Orders' in your account and select 'Cancel Order' if it hasn't shipped yet. Orders that have already shipped need to go through our return process.",
+        "Order cancellations are possible within 1 hour of placing the order. After that, if the order has shipped, you'll need to return it. Would you like help with the cancellation process?",
+        "I can help with order cancellation! Please note that orders can only be cancelled before they're shipped. Log into your account, go to 'My Orders', and select 'Cancel'. Need more help?"
+      ]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": ["contact support", "talk to agent", "human agent", "speak to someone", "customer service number", "live chat", "email support", "contact us", "reach support"],
+      "responses": [
+        "You can reach our support team via: 📞 Phone: 1-800-SUPPORT (Mon-Fri 9AM-6PM EST), 📧 Email: support@company.com, 💬 Live Chat on our website (24/7). How would you prefer to connect?",
+        "Our customer service team is available through multiple channels! Call us at 1-800-SUPPORT, email support@company.com, or use the live chat on our website for instant assistance.",
+        "I'll connect you with our support team! You can reach us at 1-800-SUPPORT, chat live on our website, or email us at support@company.com. Average response time is under 2 hours."
+      ]
+    },
+    {
+      "tag": "discount_promo",
+      "patterns": ["discount", "promo code", "coupon", "sale", "offer", "deal", "voucher", "promotional code", "any deals"],
+      "responses": [
+        "Great news! Sign up for our newsletter to get 10% off your first order. We also run seasonal sales — check our website's 'Deals' section for current promotions!",
+        "We have exciting offers! New customers get 10% off with code WELCOME10. Subscribe to our newsletter for exclusive deals and early access to sales.",
+        "Check out our Deals page for current promotions! You can also follow us on social media for flash sales and exclusive discount codes. First-time shoppers get 10% off!"
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": ["complaint", "not satisfied", "bad experience", "poor service", "unhappy", "disappointed", "terrible", "worst", "problem with service", "issue with product"],
+      "responses": [
+        "I sincerely apologize for your experience. Your feedback is very important to us. Could you please describe the issue in detail so I can escalate it to the right team immediately?",
+        "I'm truly sorry to hear this. We take all complaints seriously and want to make this right for you. Please share more details and I'll ensure this gets priority attention.",
+        "I apologize for the inconvenience caused. We strive to provide the best service and clearly fell short here. Let me help resolve this — could you share more about what happened?"
+      ]
+    },
+    {
+      "tag": "warranty",
+      "patterns": ["warranty", "guarantee", "product warranty", "warranty claim", "warranty period", "defective product", "broken product", "damaged item"],
+      "responses": [
+        "All our products come with a 1-year manufacturer's warranty covering defects in materials and workmanship. For warranty claims, please contact us with your order number and photos of the issue.",
+        "Our warranty covers manufacturing defects for 1 year from purchase. To file a claim, email warranty@company.com with your order ID and a description of the issue. We'll respond within 24 hours.",
+        "We stand behind our products! Our 1-year warranty covers any manufacturing defects. For a warranty claim, visit our website's 'Warranty' section or contact our support team directly."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["business hours", "working hours", "when are you open", "support hours", "office hours", "what time do you open", "are you open"],
+      "responses": [
+        "Our customer support is available Monday-Friday 9AM-6PM EST, and Saturday 10AM-4PM EST. Our chatbot and online resources are available 24/7!",
+        "We're here for you! Live support hours: Mon-Fri 9AM-6PM EST, Sat 10AM-4PM EST. For urgent issues outside these hours, email us and we'll respond first thing in the morning.",
+        "Our team works Monday through Friday, 9AM to 6PM Eastern Time. On Saturdays, we're available 10AM-4PM. I'm available 24/7 to help with common questions!"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not quite sure I understand. Could you rephrase that? I'm here to help with orders, returns, payments, account issues, and more!",
+        "Hmm, I didn't catch that. Could you try asking in a different way? I can help with order tracking, returns, shipping, payments, and general inquiries.",
+        "I want to make sure I help you correctly! Could you provide more details? You can also type 'contact support' to speak with a human agent."
+      ]
+    }
+  ]
+}
