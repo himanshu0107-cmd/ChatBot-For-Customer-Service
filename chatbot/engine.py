@@ -73,7 +73,7 @@ class ChatbotEngine:
     def _get_intent(self, text):
         processed  = self._preprocess(text)
         label_idx  = self.model.predict([processed])[0]
-        tag        = self.label_encoder.inverse_transform([label_idx])[0]
+        tag        = str(self.label_encoder.inverse_transform([label_idx])[0])
 
         try:
             scores     = self.model.decision_function([processed])[0]
